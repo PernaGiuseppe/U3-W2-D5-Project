@@ -1,18 +1,41 @@
-.epic-gradient {
-  background: #ff00d0;
-  background: linear-gradient(
-    206deg,
-    rgba(255, 0, 208, 1) 0%,
-    rgba(72, 64, 122, 1) 50%,
-    rgba(20, 20, 20, 1) 100%
-  );
+.meteo-card-hover {
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.meteo-card-hover:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), 0 1.5px 4px rgba(0, 0, 0, 0.12);
+  z-index: 2;
 }
 .pink {
-  background-color: rgba(255, 0, 208, 1);
-}
-.violet {
-  background-color: rgba(72, 64, 122, 1);
+  color: rgba(255, 0, 208, 1) !important;
 }
 .blue {
-  background-color: rgb(43, 23, 145);
+  color: #0068ff !important;
+}
+.sky-gradient {
+  background: #7ad2fe;
+  background: linear-gradient(
+    180deg,
+    rgba(122, 210, 254, 1) 0%,
+    rgba(203, 233, 249, 1) 50%,
+    rgba(246, 251, 253, 1) 100%
+  );
+}
+.btn-outline-black-custom,
+.btn-outline-black-custom:active,
+.btn-outline-black-custom:visited {
+  color: #111 !important;
+  border: 1.5px solid #111 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-black-custom:hover,
+.btn-outline-black-custom:focus {
+  background: #111 !important;
+  color: #fff !important;
+  border-color: #111 !important;
+}
+.dropdown-toggle::after {
+  border-top-color: #fff !important;
 }
