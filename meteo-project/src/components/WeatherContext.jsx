@@ -46,7 +46,7 @@ export const WeatherProvider = ({ children }) => {
     setWeatherData((prev) => {
       const exists = prev.some((w) => w.id === data.id)
       if (!exists) {
-        return [...prev, data]
+        return [data, ...prev] // Aggiunge la nuova città all'inizio dell'array
       }
       return prev
     })
